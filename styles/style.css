@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: #f4fbff;
+  display: flex;
+}
+
+
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 40px;  
+}
+.header-logo {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.header-logo h1 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.header-logo img {
+  position: relative;
+  height: 5rem;
+  top: 1.4rem;
+}
+
+
+.contacts-wrapper {
+  margin-top: 60px;
+  color: #5893d4;
+}
+.contacts-wrapper > a {
+  color: #5893d4;
+  font-style: Lato, sans-serif;
+  font-size: 1.4rem;
+}
+.contacts {
+  margin-top: 1rem;
+}
+.contact-link {
+  margin-right: 1.5rem;
+  font-size: 2.5rem;
+  color: black;
+}
+.contact-link i {
+  transition: transform 0.2s ease-out;
+}
+.contact-link i:hover {
+  transform: scale(1.3);
+}
+.fa-telegram {
+  color: #30a8e4;
+}
+.fa-vk {
+  color: #4a76a8;
+}
+
+
+/* Container for works */
+
+
+.container {
+  padding: 40px;
+  margin-left: 40%;
+}
+.case {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 2rem #ccc;
+  background-color: #ccc;
+  max-width: 54rem;
+  padding: 2.5rem;
+  border-radius: 0.7rem;
+  margin-bottom: 3.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+.case:hover {
+  transform: scale(1.05);
+}
+.case-title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.case-description {
+  padding: 1rem 0;
+  font-weight: lighter;
+}
+.case img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+.case i {
+  margin-left: 1rem;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .header-logo {
+    font-size: 2rem;
+  }
+  .header-logo h1 {
+    font-size: 1rem;
+  }
+  .header-logo img {
+    position: relative;
+    height: 4rem;
+    top: 1.4rem;
+  }
+  .case-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    flex-direction: column;
+  }
+  .header {
+    /* position: relative;
+    flex-direction: row;
+    padding: 1.2rem; */
+    display: none;
+  }
+  .container {
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  .case {
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
